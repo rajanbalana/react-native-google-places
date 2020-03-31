@@ -1,5 +1,7 @@
 # react-native-google-places
 
+# This repository is based on [https://github.com/tolu360/react-native-google-places](https://github.com/tolu360/react-native-google-places). All merits are his property
+
 ## Versioning:
 - for RN >= 0.40.0, use v3+ (e.g. react-native-google-places@1.0.2)
 
