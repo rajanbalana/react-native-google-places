@@ -1,0 +1,35 @@
+{
+  "name": "edgarturrin/react-native-google-places",
+  "description": "Google Places Modals and API Services for React Native Apps with iOS/Android ",
+  "main": "index.js",
+  "author": "Edgardo Turrin <edgardoturrin@gmail.com>",
+  "version": "1.0.0",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edgarturrin/react-native-google-places"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edgarturrin/react-native-google-places/issues"
+  },
+  "types": "index.d.ts",
+  "homepage": "https://github.com/edgarturrin/react-native-google-places#readme",
+  "keywords": [
+    "react",
+    "react-native",
+    "react-component",
+    "map",
+    "places",
+    "google-places",
+    "Google Places API",
+    "autocomplete",
+    "ios",
+    "android"
+  ],
+  "peerDependencies": {
+    "react": ">=15.4.0 || ^16.0.0-alpha",
+    "react-native": ">=0.40.0"
+  },
+  "devDependencies": {}
+}
