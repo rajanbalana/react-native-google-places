@@ -3,7 +3,7 @@
   "description": "Google Places Modals and API Services for React Native Apps with iOS/Android ",
   "main": "index.js",
   "author": "Edgardo Turrin <edgardoturrin@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {},
   "repository": {
     "type": "git",
