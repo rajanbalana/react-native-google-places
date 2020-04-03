@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
 
   s.dependency 'React'
   s.dependency 'GooglePlaces', '~> 3.2.0'
-  s.dependency 'GoogleMaps', '~> 3.2.0'
+  s.dependency 'GoogleMaps', '~> 3.5.0'
 end
