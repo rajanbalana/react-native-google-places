@@ -5,6 +5,7 @@
 #import <React/RCTEventDispatcher.h>
 
 #import <GooglePlaces/GooglePlaces.h>
+#import <GoogleMapsBase/GoogleMapsBase.h>
 
 @interface RNGooglePlaces : NSObject <RCTBridgeModule>
 
@@ -13,4 +14,3 @@
 - (GMSCoordinateBounds *) getBounds: (NSDictionary *)biasOptions andRestrictOptions: (NSDictionary *)restrictOptions;
 
 @end
-  

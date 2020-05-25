@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 #import <GooglePlaces/GooglePlaces.h>
+#import <GoogleMapsBase/GoogleMapsBase.h>
 
 #import <React/RCTBridge.h>
 

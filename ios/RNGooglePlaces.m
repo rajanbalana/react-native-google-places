@@ -9,6 +9,7 @@
 #import <React/RCTConvert.h>
 
 #import <GooglePlaces/GooglePlaces.h>
+#import <GoogleMapsBase/GoogleMapsBase.h>
 
 @interface RNGooglePlaces() <CLLocationManagerDelegate>
 

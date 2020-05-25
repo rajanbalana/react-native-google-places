@@ -1,5 +1,6 @@
 #import "RCTConvert+RNGPAutocompleteTypeFilter.h"
 #import <GooglePlaces/GooglePlaces.h>
+#import <GoogleMapsBase/GoogleMapsBase.h>
 
 @implementation RCTConvert (RNGPAutocompleteTypeFilter)
 

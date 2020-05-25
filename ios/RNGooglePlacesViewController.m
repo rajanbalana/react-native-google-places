@@ -2,6 +2,8 @@
 #import "NSMutableDictionary+GMSPlace.h"
 
 #import <GooglePlaces/GooglePlaces.h>
+#import <GoogleMapsBase/GoogleMapsBase.h>
+
 #import <React/RCTUtils.h>
 #import <React/RCTLog.h>
 
