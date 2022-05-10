@@ -9,13 +9,13 @@
 ## Install
 
 ```
-npm i @rajanbalana/react-native-google-places --save
+npm i react-native-google-places-sdk-api --save
 ```
 
 OR
 
 ```
-yarn add @rajanbalana/react-native-google-places
+yarn add react-native-google-places-sdk-api
 ```
 
 #### Google Places API Set-Up
