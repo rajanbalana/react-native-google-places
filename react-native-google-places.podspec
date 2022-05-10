@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
   s.description    = package['description']
   s.license        = package['license']
   s.author         = package['author']
-  s.homepage       = 'https://github.com/edgarturrin/react-native-google-places'
-  s.source         = { :git => 'https://github.com/edgarturrin/react-native-google-places.git', :tag => s.version }
+  s.homepage       = 'https://github.com/rajanbalana/react-native-google-places'
+  s.source         = { :git => 'https://github.com/rajanbalana/react-native-google-places.git', :tag => s.version }
 
   s.platform       = :ios, '9.0'
 
@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
   s.compiler_flags = '-DHAVE_GOOGLE_MAPS=1', '-fno-modules'
 
   s.dependency 'React'
-  s.dependency 'GooglePlaces', '~> 3.5.0'
-  s.dependency 'GoogleMaps', '~> 3.5.0'
+  s.dependency 'GooglePlaces', '~> 6.2.1'
+  s.dependency 'GoogleMaps', '~> 6.1.1'
 end
