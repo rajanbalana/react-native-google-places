@@ -1,5 +1,5 @@
 {
-  "name": "@rajanbalana/react-native-google-places",
+  "name": "react-native-google-places",
   "description": "Google Places Modals and API Services for React Native Apps with iOS/Android ",
   "main": "index.js",
   "author": "Rajan Balana <rajanbalana@gmail.com>",
