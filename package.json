@@ -1,5 +1,5 @@
 {
-  "name": "react-native-google-places",
+  "name": "react-native-google-places-sdk-api",
   "description": "Google Places API Services for React Native Apps with iOS/Android ",
   "main": "index.js",
   "author": "Rajan Balana <rajanbalana@gmail.com>",
