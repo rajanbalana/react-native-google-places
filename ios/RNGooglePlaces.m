@@ -45,19 +45,21 @@ RCT_EXPORT_METHOD(getAutocompletePredictions: (NSString *)query
     NSMutableArray *autoCompleteSuggestionsList = [NSMutableArray array];
     GMSAutocompleteFilter *autocompleteFilter = [[GMSAutocompleteFilter alloc] init];
     autocompleteFilter.type = [self getFilterType:[RCTConvert NSString:options[@"type"]]];
-    autocompleteFilter.country = [options[@"country"] length] == 0? nil : options[@"country"];
+    NSString *country = [RCTConvert NSString:options[@"country"]];
+    autocompleteFilter.country = [country length] == 0 ? nil : country;
     
     NSDictionary *locationBias = [RCTConvert NSDictionary:options[@"locationBias"]];
     NSDictionary *locationRestriction = [RCTConvert NSDictionary:options[@"locationRestriction"]];
 
     NSDictionary *location = [RCTConvert NSDictionary:options[@"location"]];
     NSNumber *locationRadius = [RCTConvert NSNumber:options[@"radius"]];
-
     
     GMSCoordinateBounds *autocompleteBounds = [self getBounds:locationBias andRestrictOptions:locationRestriction andLocation:location radiusMeters:locationRadius];
     
-    autocompleteFilter.locationBias = GMSPlaceRectangularLocationOption(autocompleteBounds.northEast, autocompleteBounds.southWest);
-    autocompleteFilter.locationRestriction = GMSPlaceRectangularLocationOption(autocompleteBounds.northEast, autocompleteBounds.southWest);
+    if (autocompleteBounds != nil) {
+        autocompleteFilter.locationBias = GMSPlaceRectangularLocationOption(autocompleteBounds.northEast, autocompleteBounds.southWest);
+        autocompleteFilter.locationRestriction = GMSPlaceRectangularLocationOption(autocompleteBounds.northEast, autocompleteBounds.southWest);
+    }
     
     GMSAutocompleteSessionToken *token = [[GMSAutocompleteSessionToken alloc] init];
     
@@ -220,7 +222,7 @@ RCT_EXPORT_METHOD(lookUpPlaceByID: (NSString*)placeID
     double locationLongitude = [[RCTConvert NSNumber:location[@"longitude"]] doubleValue];
     double locationLatitude = [[RCTConvert NSNumber:location[@"latitude"]] doubleValue];
 
-    double locationRadius = [[RCTConvert NSNumber:location[@"radius"]] doubleValue];
+    double locationRadius = [radius doubleValue];
 
     if (biasLatitudeSW != 0 && biasLongitudeSW != 0 && biasLatitudeNE != 0 && biasLongitudeNE != 0) {
         CLLocationCoordinate2D neBoundsCorner = CLLocationCoordinate2DMake(biasLatitudeNE, biasLongitudeNE);
